@@ -5,7 +5,11 @@ void main() {
   }
 
   for (int score in scores) {
-    print(score);
+    if (score < 3) {
+      print("$score sus");
+    } else {
+      print(score);
+    }
   }
 
   for (int score in scores.where((someScore) => someScore < 3)) {
